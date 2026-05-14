@@ -14,6 +14,7 @@ cd laravel-activity-logger/demo
 cp .env.example .env
 composer install
 php artisan key:generate
+php artisan migrate --seed
 php artisan serve
 ```
 
