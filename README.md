@@ -12,10 +12,8 @@ A Laravel package that automatically logs Eloquent model events (create/update/d
 git clone https://github.com/mohit-hasan/laravel-activity-logger.git
 cd laravel-activity-logger/demo
 cp .env.example .env
-php artisan key:generate
 composer install
-php artisan vendor:publish --provider="MohitHasan\ActivityLogger\ActivityLoggerServiceProvider" --all
-php artisan migrate --seed
+php artisan key:generate
 php artisan serve
 ```
 
@@ -26,8 +24,8 @@ Visit `http://localhost:8000`. Use the buttons to test: **Manual Log**, **Create
 ## Install in Your App
 
 ```bash
-composer require mohit-hasan/laravel-activity-logger
-php artisan vendor:publish --provider="MohitHasan\ActivityLogger\ActivityLoggerServiceProvider" --all
+composer require mohit-hasan/laravel-activity-logger dev-main
+php artisan vendor:publish --provider="MohitHasan\ActivityLogger\ActivityLoggerServiceProvider"
 php artisan migrate
 ```
 
